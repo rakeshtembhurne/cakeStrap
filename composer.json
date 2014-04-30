@@ -1,0 +1,16 @@
+{
+    "name": "dummy/CakeStrap",
+    "description": "CakeStrap as plugin",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dummy",
+            "email": "dummy@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "composer/installers": "*"
+    }
+}
