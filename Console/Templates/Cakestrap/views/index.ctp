@@ -80,9 +80,9 @@
 	}
 
 	echo "\t\t<td class=\"actions\">\n";
-	echo "\t\t\t<?php echo \$this->Html->link(__('View'), array('action' => 'view', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn btn-default btn-xs')); ?>\n";
-	echo "\t\t\t<?php echo \$this->Html->link(__('Edit'), array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn btn-default btn-xs')); ?>\n";
-	echo "\t\t\t<?php echo \$this->Form->postLink(__('Delete'), array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn btn-default btn-xs'), __('Are you sure you want to delete # %s?', \${$singularVar}['{$modelClass}']['{$primaryKey}'])); ?>\n";
+	echo "\t\t\t<?php echo \$this->Html->link('<i class =\"glyphicon glyphicon-eye-open\"></i>', array('action' => 'view', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn btn-info btn-xs' , 'data-toggle' => 'tooltip' , 'data-placement' => 'bottom' , 'title' => 'View' , 'escape' => false)); ?>\n";
+	echo "\t\t\t<?php echo \$this->Html->link('<i class =\"glyphicon glyphicon-pencil\"></i>', array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn btn-success btn-xs' , 'data-toggle' => 'tooltip' , 'data-placement' => 'bottom' , 'title' => 'Edit' , 'escape' => false)); ?>\n";
+	echo "\t\t\t<?php echo \$this->Form->postLink('<i class =\"glyphicon glyphicon-trash\"></i>', array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn btn-danger btn-xs' , 'data-toggle' => 'tooltip' , 'data-placement' => 'bottom' , 'title' => 'Delete' , 'escape' => false), __('Are you sure you want to delete # %s?', \${$singularVar}['{$modelClass}']['{$primaryKey}'])); ?>\n";
 	echo "\t\t</td>\n";
 	echo "\t</tr>\n";
 

@@ -31,15 +31,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			
 			echo $this->fetch('meta');
 
-			echo $this->Html->css('bootstrap');
-			echo $this->Html->css('main');
-
+			echo $this->Html->css(array('bootstrap', 'main'));
 			echo $this->fetch('css');
 			
-			echo $this->Html->script('libs/jquery-1.10.2.min');
-			echo $this->Html->script('libs/bootstrap.min');
-			
-			echo $this->fetch('script');
 		?>
 	</head>
 
@@ -69,7 +63,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				</small>
 			</div><!-- /.well well-sm -->
 		</div><!-- /.container -->
-		
+		<?php
+			echo $this->Html->script(array('libs/jquery-1.10.2.min', 'libs/bootstrap.min', 'libs/custom'));
+			echo $this->fetch('script');
+		?>
 	</body>
 
 </html>
