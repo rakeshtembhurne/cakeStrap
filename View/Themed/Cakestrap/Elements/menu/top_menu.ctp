@@ -9,7 +9,7 @@
 		<?php echo $this->Html->Link('CakeStrap', 'http://twitter.github.com/bootstrap/', array('class' => 'navbar-brand')); ?>
 	</div><!-- /.navbar-header -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
-		<ul class="nav navbar-nav">
+		<ul class="nav navbar-nav navbar-right">
 			<li class="active"><a href="#">Link</a></li>
 			<li><a href="#">Link</a></li>
 			<li class="dropdown">
