@@ -30,8 +30,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			echo $this->Html->meta('icon');
 			
 			echo $this->fetch('meta');
-
-			echo $this->Html->css(array('bootstrap', 'main'));
+			if (!empty($bootswatch)) {
+				echo $this->Html->css("bootstrap.{$bootswatch}.min");
+			} else {
+				echo $this->Html->css('bootstrap.min');
+			}		
+			echo $this->Html->css(array('main'));
 			echo $this->fetch('css');
 			
 		?>
